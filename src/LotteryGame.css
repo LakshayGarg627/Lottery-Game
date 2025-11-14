@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lottery-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.lottery-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #4a5568;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.target-section {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.target {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ticket-section {
+  margin-bottom: 30px;
+}
+
+.ticket-label {
+  color: #4a5568;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ticket-display {
+  background: linear-gradient(45deg, #2d3748, #4a5568);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.result-section {
+  margin: 30px 0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instruction {
+  color: #718096;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.win-message {
+  color: #38a169;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: bounce 1s infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.try-again {
+  color: #e53e3e;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.generate-btn {
+  background: linear-gradient(45deg, #48bb78, #38a169);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.generate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(72, 187, 120, 0.6);
+  background: linear-gradient(45deg, #38a169, #2f855a);
+}
+
+.generate-btn:active {
+  transform: translateY(-1px);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 600px) {
+  .lottery-card {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .ticket-display {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+  }
+  
+  .target {
+    font-size: 1.5rem;
+  }
+}
